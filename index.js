@@ -18,14 +18,14 @@ app.listen(port, () => {
 
 
 
-function fetchData(url) {
+async function fetchData(url) {
   // Launch a headless browser
   const browser = await puppeteer.launch({'headless':'new'});
 
   // Create a new page
   const page = await browser.newPage();
 
-  try {
+  /*try {
     // Navigate to the specified URL
     await page.goto(url);
 
@@ -41,7 +41,7 @@ function fetchData(url) {
   } finally {
     // Close the browser
     await browser.close();
-  }
+  }*/
 }
 
 
