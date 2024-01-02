@@ -6,7 +6,7 @@ const port = 3000;
 app.get('/', (req, res) => {
   //const url = 'https://amazon.com';
   
-    res.send(fetchData('https://amazon.com'));
+    res.send(fetchData('https://selfstudyhelp.com'));
 });
 
 // Start the server
