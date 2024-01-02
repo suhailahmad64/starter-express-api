@@ -5,8 +5,8 @@ const port = 3000;
 // Define a route
 app.get('/', (req, res) => {
   //const url = 'https://amazon.com';
-  
-    res.send(fetchData('https://selfstudyhelp.com'));
+  fetchData('https://selfstudyhelp.com');
+    res.send('result above');
 });
 
 // Start the server
@@ -34,7 +34,7 @@ async function fetchData(url) {
     // Display the HTML source code
     console.log(pageContent);
     return pageContent;
-    
+
   } catch (error) {
     console.error('Error fetching data:', error);
   } finally {
@@ -42,3 +42,5 @@ async function fetchData(url) {
     await browser.close();
   }
 }
+
+
