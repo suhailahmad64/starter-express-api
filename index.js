@@ -33,6 +33,8 @@ async function fetchData(url) {
 
     // Display the HTML source code
     console.log(pageContent);
+    return pageContent;
+    
   } catch (error) {
     console.error('Error fetching data:', error);
   } finally {
