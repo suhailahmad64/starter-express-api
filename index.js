@@ -5,8 +5,8 @@ const port = 3000;
 // Define a route
 app.get('/', (req, res) => {
   const url = 'https://amazon.com';
-  fetchData(url);
-    res.send('Hello, World!');
+  
+    res.send(fetchData(url));
 });
 
 // Start the server
