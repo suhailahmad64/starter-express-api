@@ -8,7 +8,7 @@ app.get('/', async (req, res) => {
   const url = 'https://selfstudyhelp.com';
 
   // Launch a headless browser
-  const browser = await puppeteer.launch('headless'=>'new');
+  const browser = await puppeteer.launch({'headless':'new'});
 
   // Create a new page
   const page = await browser.newPage();
