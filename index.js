@@ -20,7 +20,7 @@ app.listen(port, () => {
 
 function fetchData(url) {
   // Launch a headless browser
-  //const browser = await puppeteer.launch({'headless':'new'});
+  const browser = await puppeteer.launch({'headless':'new'});
 
   // Create a new page
   //const page = await browser.newPage();
